@@ -31,7 +31,7 @@
 
     /* Local server functions */
     var port = process.env.PORT || 3000;
-    app.listen(port);
+    app.listen(process.env.PORT);
     console.log('Listening at http://localhost:' + port);
 
 }());
