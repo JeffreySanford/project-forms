@@ -24,14 +24,14 @@
 
 
     app.get('/', routes.index);
-    app.post('/', routes.success);
+    app.post('/success', routes.success);
     app.get('/reports', routes.reports);
     app.get('/landing', routes.index);
     app.get('*', routes.index);
 
     /* Local server functions */
     var port = process.env.PORT || 3000;
-    app.listen(process.env.PORT);
+    app.listen(port);
     console.log('Listening at http://localhost:' + port);
 
 }());
