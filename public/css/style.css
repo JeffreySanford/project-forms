@@ -2,6 +2,10 @@
 * {
     margin: 0;
 }
+html {
+    height: 100%;
+}
+
 body {
 	width: 95%;
     height:100%;
@@ -13,6 +17,8 @@ body {
     background: -o-linear-gradient(top, rgba(171,189,242,1) 0%, rgba(208,216,242,1) 100%);
     background: -ms-linear-gradient(top, rgba(171,189,242,1) 0%, rgba(208,216,242,1) 100%);
     background: linear-gradient(to bottom, rgba(171,189,242,1) 0%, rgba(208,216,242,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	color: darkBlue;
     font-family: 'Lora', serif;
     font-weight: normal;
@@ -21,6 +27,27 @@ body {
 .header-style {
     background-color: #B2D7FD;
     padding: 1em;
+    color: black;
+}
+
+#header-column-left {
+    text-align: left;
+}
+
+#header-column-right {
+    text-align: right;
+}
+
+header .social {
+    font-size: 2em; 
+    margin-right: .01em;
+}
+
+header .social i {
+    color: #337ab7;
+}
+
+header .social i:hover {
     color: black;
 }
 
