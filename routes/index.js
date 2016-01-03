@@ -4,7 +4,7 @@
     exports.index = function pageLanding(req, res) {
         res.render('template/default', {
             title: 'Landing',
-            nextPage: 'Admin Reports Page',
+            nextPage: 'Admin Reports',
             nextPageUrl: '/reports',
             data: req.body
         });
@@ -74,7 +74,7 @@
         /* Render the information to the success view */
         res.render('template/success', {
             title: "Recorded Survey Record",
-            nextPage: 'Home Page',
+            nextPage: 'Home',
             nextPageUrl: '/landing',
             surveyData: objSurvey
         }); // end sucessful-submital render
