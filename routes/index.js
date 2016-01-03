@@ -85,7 +85,7 @@
         var storageJson = JSON.parse(fs.readFileSync('data/storage.json', 'utf8'));
         if (storageJson !== 'undefined') {
             res.render('template/reports', {
-                title: "Survey Reports Page",
+                title: "Survey Reports",
                 nextPage: 'Landing',
                 nextPageUrl: '/landing',
                 surveyData: storageJson
