@@ -1,6 +1,6 @@
 {
   "name": "post-functions",
-  "description": "Simple web application to display a quality assurance report to uses.  Uses express as the framework",
+  "description": "Simple web application to collect survey information from users and display a quality assurance report to an admin.  Uses express as the framework, bodyparser as the middleware for the POST request.",
   "version": "1.0.0",
   "author": "Jeffrey Sanford",
   "email": "jeffreysanford@gmail.com",

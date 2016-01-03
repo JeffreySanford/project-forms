@@ -3,14 +3,13 @@
 
     // Express requires
     var express = require('express');
-    var fs = require('fs');
     var bodyParser = require('body-parser');
-    
+
     // Express deinitions
     var app = express();
     var routes = require('./routes');
 
-    app.use(bodyParser.urlencoded({ extended: true }));
+    app.use(bodyParser.urlencoded({extended: false}));
     app.use(bodyParser.json());
 
     app.set('view engine', 'ejs');

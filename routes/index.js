@@ -44,7 +44,7 @@
         }
 
         if (q.commentText === '') {
-            q.commentText = "no comments we indicated.";
+            q.commentText = "no comments were indicated.";
         }
         objSurvey.comment = q.commentText;
         objSurvey.time = new Date();
