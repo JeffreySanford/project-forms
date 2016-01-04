@@ -70,7 +70,7 @@
                 fs.writeFile("data/storage.json", JSON.stringify(arrayData));
             }
         });
-        
+
         /* Render the information to the success view */
         res.render('template/success', {
             title: "Recorded Survey Record",
@@ -82,16 +82,26 @@
 
     exports.reports = function pageSuccess(req, res) {
         var fs = require('fs');
-        var storageJson = JSON.parse(fs.readFileSync('data/storage.json', 'utf8'));
-        if (storageJson !== 'undefined') {
+        var storageJson = {};
+        var data = 'invalid';
+
+        fs.access('data/storage.json', fs.R_OK & fs.W_OK, function (err) {
+            if (err) {
+                /* exists is false -- creating */
+                storageJson = {null: 'null'};
+                data = "";
+            } else {
+                storageJson = JSON.parse(fs.readFileSync('data/storage.json', 'utf8'));
+                data = "valid";
+            }
+
             res.render('template/reports', {
                 title: "Survey Reports",
                 nextPage: 'Landing',
                 nextPageUrl: '/landing',
-                surveyData: storageJson
+                surveyData: storageJson,
+                data: data
             });
-        } else {
-            console.log('data/storage.json cannot be loaded');
-        }
+        });
     };
 }());
