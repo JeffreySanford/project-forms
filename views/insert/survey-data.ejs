@@ -24,6 +24,8 @@
 				<p>Readability: <%= objSurveyData.read %></p>
 			</div>
 		</div> <!-- end report wrapper -->
-		<hr id="reiterator-seperator">
+		<% if ( (i + 1) != surveyData.length ) { %> 
+			<hr id="reiterator-seperator">
+		<% } %>
 	<% } %>
 </div>
