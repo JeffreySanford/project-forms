@@ -1,7 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
-* {
-    margin: 0;
-}
 html {
     height: 100%;
 }
@@ -115,15 +112,13 @@ div.tooltip-inner {
     background-color: #B2FDFC;
     box-shadow: 1px 1px 3px #000000;
     color: black;
+    border: 1px solid black;
 }
 
 input[type="radio"] {
     color white;
     background-color: white;
     box-shadow: none;
-}
-.user-identification {
-
 }
 
 .user-identification label {
@@ -133,6 +128,7 @@ input[type="radio"] {
 .user-identification input {
     margin-left: 2em;
     width: 80%;
+    border: 1px solid black;
 }
 
 #quality-report {
@@ -197,9 +193,4 @@ footer {
 
 .clearfix {
   zoom: 1; /* ie 6/7 */
-}
-@media all and (max-width: 480px)  {
-    .visable {
-        display: hidden;
-    }
 }
