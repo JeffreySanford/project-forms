@@ -115,6 +115,8 @@ div.tooltip-inner {
 input[type="radio"] {
 
     box-shadow: none;
+    border: 0px !important;
+    background-color: transparent;
 }
 
 .user-identification label {
