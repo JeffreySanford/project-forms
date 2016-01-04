@@ -175,6 +175,13 @@ input[type="radio"] {
   display: block-inline;
 }
 
+#reiterator-seperator {
+    border-color: #A0A0A0;
+}
+
+#footer-seperator {
+    border-color: #000000;
+}
 footer {
     text-align: center;
     font-size: 1.3em;
