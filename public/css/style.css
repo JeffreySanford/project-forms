@@ -107,7 +107,7 @@ div.tooltip-inner {
 
 .content input, .content textarea {
     background-color: #B2FDFC;
-    box-shadow: 1px 1px 3px #000000;
+    box-shadow: 1px 1px 3px #A9A9A9;
     color: black;
     border: 1px solid black;
 }
