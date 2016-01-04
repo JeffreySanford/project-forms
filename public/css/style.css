@@ -1,11 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Lora);
-html {
-    height: 100%;
-}
 
 body {
 	width: 95%;
-    height:100%;
 	margin: 1em auto;
     background: rgba(171,189,242,1);
     background: -moz-linear-gradient(top, rgba(171,189,242,1) 0%, rgba(208,216,242,1) 100%);
@@ -185,7 +181,7 @@ footer {
     position: relative;
     text-align: center;
     width: 100%;
-    margin: 2em auto 0;
+    margin: 1em auto 0;
 }
 
 .clearfix:after {
