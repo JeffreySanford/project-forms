@@ -25,6 +25,7 @@ body {
     background-color: #B2D7FD;
     padding: 1em;
     color: black;
+    border-radius: 6px;
 }
 
 #header-column-left {
