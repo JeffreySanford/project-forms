@@ -153,6 +153,7 @@ input[type="radio"] {
 
  #report-wrapper:hover {
     border: 1px solid teal;
+    color: #000000;
  }
 
 .rankings p {
